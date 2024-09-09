@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registreringsskjema</title>
+</head>
+
+<body>
+    <form>
+        <section>
+            <label for="Fornavn">Fornavn:</label>
+            <input type="text" name="Fornavn" placeholder="Fornavn" id="Fornavn" minlength="2" maxlength="25"
+                pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+        </section>
+        <section>
+            <label for="Etternavn">Etternavn</label>
+            <input type="text" name="Etternavn" placeholder="Etternavn" id="Etternavn" minlength="2" maxlength="25" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+        </section>
+        <section>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="henrik.Ibsen@hotmail.no" required>
+        </section>
+        <section>
+            <label for="password">Passord:</label>
+            <input type="password" id="password" placeholder="******" minlength="8"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+        </section>
+        <section>
+            <label for="tall">Alder:</label>
+            <input type="number" id="tall" min="18" max="99" required>
+        </section>
+        <section>
+            <label for="telefon">Telefon:</label>
+            <input type="tall" id="telefon" placeholder="46220788" pattern="[0-9]{8,12}" required>
+        </section>
+        <section>
+            <label for="fødselsdato">Fødselsdato:</label>
+            <input type="date" id="fødselsdato" max="2023-12-31" required>
+        </section>
+        <section>
+            <label for="mann">Mann</label>
+            <input type="radio" id="mann" name="kjonn" value="mann" required>
+            <label for="kvinne">Kvinne</label>
+            <input type="radio" id="kvinne" name="kjonn" value="Kvinne" required>
+        </section>
+        <section>
+            <label for="Norge">Norge</label>
+            <input type="radio" id="Norge" name="Norge" value="Norge" required>
+            <label for="Sverige">Sverige</label>
+            <input type="radio" id="Sverige" name="Sverige" value="Sverige" required>
+            <label for="Danmark">Danmark</label>
+            <input type="radio" id="Danmark" name="Danmark" value="Danmark" required>
+        </section>
+        <section>
+            <label for="avkrysningsboks">personvern:</label>
+            <input type="checkbox" id="avkrysningsboks" required>
+        </section>
+        <section>
+        <label for="submit">submit</label>
+        <input type="checkbox" id="submit">
+        </section>
+        <form>
+</body>
+
+</html>
